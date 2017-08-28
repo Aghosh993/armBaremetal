@@ -2,7 +2,7 @@ language: c
 
 before_install:
   - sudo apt-get install realpath software-properties-common 
-  - sudo apt-add repository universe
+  - sudo add-apt-repository universe
   - sudo cat >/etc/apt/sources.list.d/xenial.list <<EOF \
     deb http://archive.ubuntu.com/ubuntu xenial main universe \
     deb-src http://archive.ubuntu.com/ubuntu xenial main universe \
