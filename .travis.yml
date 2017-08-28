@@ -1,32 +1,40 @@
 language: c
+sudo: required
+
+addons:
+  apt:
+    packages:
+      software-properties-common
+      gcc-mingw-w64-i686 
+      g++-mingw-w64-i686
+      binutils-mingw-w64-i686 
+      build-essential 
+      autoconf 
+      autogen 
+      bison 
+      dejagnu 
+      flex 
+      flip 
+      gawk 
+      git 
+      gperf 
+      gzip 
+      nsis 
+      openssh-client 
+      p7zip-full 
+      perl 
+      python-dev 
+      libisl-dev 
+      scons 
+      tcl 
+      texinfo 
+      tofrodos 
+      wget 
+      zip 
+      texlive 
+      texlive-extra-utils
 
 before_install:
-  - sudo apt-get update && sudo apt-get install software-properties-common && sudo apt-get install -y gcc-mingw-w64-i686 g++-mingw-w64-i686 binutils-mingw-w64-i686 && sudo apt-get -f install -y \
-      build-essential \
-      autoconf \
-      autogen \
-      bison \
-      dejagnu \
-      flex \
-      flip \
-      gawk \
-      git \
-      gperf \
-      gzip \
-      nsis \
-      openssh-client \
-      p7zip-full \
-      perl \
-      python-dev \
-      libisl-dev \
-      scons \
-      tcl \
-      texinfo \
-      tofrodos \
-      wget \
-      zip \
-      texlive \
-      texlive-extra-utils
   - wget https://developer.arm.com/-/media/Files/downloads/gnu-rm/6-2017q2/gcc-arm-none-eabi-6-2017-q2-update-src.tar.bz2
   - tar xvf gcc-arm-none-eabi-6-2017-q2-update-src.tar.bz2
 
