@@ -3,12 +3,6 @@ language: c
 before_install:
   - sudo apt-get install realpath software-properties-common 
   - sudo add-apt-repository universe
-  - sudo cat >/etc/apt/sources.list.d/xenial.list <<EOF \
-    deb http://archive.ubuntu.com/ubuntu xenial main universe \
-    deb-src http://archive.ubuntu.com/ubuntu xenial main universe \
-    deb http://security.ubuntu.com/ubuntu xenial-security main \
-    EOF
-  - sudo echo 'APT::Default-Release "trusty";' > /etc/apt/apt.conf.d/00default
   - sudo dpkg --add-architecture i386
   - sudo apt-get update
   - sudo apt-get install -y -t xenial \
