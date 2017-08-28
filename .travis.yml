@@ -38,4 +38,4 @@ before_install:
   - wget https://developer.arm.com/-/media/Files/downloads/gnu-rm/6-2017q2/gcc-arm-none-eabi-6-2017-q2-update-src.tar.bz2
   - tar xvf gcc-arm-none-eabi-6-2017-q2-update-src.tar.bz2
 
-script: cd gcc-arm-none-eabi-6-2017-q2-update && ./install-src.sh && ./build-prerequisites.sh && ./build-toolchain.sh
+script: cd gcc-arm-none-eabi-6-2017-q2-update && ./install-sources.sh && ./build-prerequisites.sh && ./build-toolchain.sh
